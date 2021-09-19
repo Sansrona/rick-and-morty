@@ -1,0 +1,14 @@
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    label {
+        input {
+            margin-right: 16px;
+        }
+    }
+    label+label{
+            margin-top: 24px;
+    }
+}

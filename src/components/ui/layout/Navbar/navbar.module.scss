@@ -1,0 +1,58 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0;
+    box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.08);
+    background-color: var(--navbar-bg-color);
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-content: baseline;
+        list-style: none;
+        .button {
+            color: var(--additional-color);
+            text-decoration: none;
+            display: grid;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .icon {
+                justify-self: center;
+
+                path {
+                    stroke: var(--additional-color);
+                }
+            }
+            &.active {
+                .icon {
+                    path{
+                        stroke: var(--icon-color);
+                    }
+                }
+                p{
+                    color:var(--icon-color);
+                }
+            }
+        }
+        li:first-child{
+            .icon{
+                path{
+                    fill:var(--additional-color);
+                    stroke: none;
+                }
+            }
+            .active{
+                .icon{
+                    path{
+                        fill:var(--icon-color);
+                        stroke: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

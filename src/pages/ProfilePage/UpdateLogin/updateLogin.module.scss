@@ -1,0 +1,14 @@
+.header {
+    padding: 20px 15px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+    svg {
+        margin-right: 20px;
+
+        path {
+            stroke: var(--text-color);
+        }
+    }
+}

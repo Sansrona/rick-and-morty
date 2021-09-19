@@ -1,0 +1,99 @@
+.wrapper{
+    height: 100vh;
+    width: 100%;  
+}
+
+// .title{
+//     display: block;
+//     background-image:url(../../../../assets/images/bg-small.png) ;
+//     background-position: center ;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     max-width:100vw;
+//     height:45vh;
+// }
+
+// .morty{
+//     background-image:url(../../../../assets/images/bg-morty.png) ;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     max-width:100vw;
+//     height: 22vh;
+// }
+
+// .rick{
+//     background-image:url(../../../../assets/images/bg-rick.png) ;
+//     background-position: bottom ;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     max-width: 100vw;
+//     height: 22vh;
+// }
+
+.popup{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+@media (min-height: 600px){
+    .morty{
+        height: 23vh;
+    }
+    
+    .rick{
+        height: 23vh;
+    }
+}
+@media (min-height: 768px){    
+    .morty{
+        max-width:100vw;
+        height: 24vh;
+    }
+    
+    .rick{
+        max-width: 100vw;
+        height: 24vh;
+    }
+}
+
+@media (min-height: 1024px){
+    .title{
+        max-width:100vw;
+        height:700px;
+        padding: 53px;
+    }
+    
+    .morty{
+        max-width:100vw;
+        height: 22vh;
+    }
+    
+    .rick{
+        max-width: 100vw;
+        height: 22vh;
+    }
+}
+
+@media (min-width: 1440px){
+    .title{
+    background-image:url(../../../../assets/images/bg-desktop.png) ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .rick{
+        display: none;
+    }
+
+    
+    .morty{
+        display: none;
+    }
+}

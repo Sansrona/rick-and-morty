@@ -1,0 +1,129 @@
+.header {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+    height: 76px;
+    margin-bottom: 24px;
+
+    button:first-of-type {
+        svg {
+            path {
+                stroke: var(--text-color);
+            }
+        }
+    }
+
+
+}
+
+.wrapper {
+    padding: 0 15px;
+
+    p[class] {
+        color: var(--subtitle-gray)
+    }
+
+    .alphabetSort {
+
+        border-bottom: 2px solid var(--search-bg-color);
+        padding-bottom: 36px;
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 32px;
+
+            .sortActive {
+                svg {
+                    path {
+                        fill: var(--tertiary-color);
+                        stroke: var(--tertiary-color);
+                    }
+                }
+            }
+
+            svg {
+                path {
+                    fill: var(--subtitle-gray);
+                    stroke: var(--subtitle-gray);
+                }
+            }
+        }
+
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+
+        .checkbox {
+            appearance: none;
+            border: 2px solid var(--subtitle-gray);
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            position: relative;
+
+            &:checked {
+                border-color: var(--tertiary-color);
+                background-color: var(--tertiary-color);
+
+                &:after {
+                    content: '\2714';
+                    color: var(--icons-color);
+                    position: absolute;
+                    top: 0;
+                    left: 2px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+
+    .statusBlock {
+        margin-top: 36px;
+        padding-bottom: 36px;
+        border-bottom: 2px solid var(--search-bg-color);
+
+        p {
+            margin-top: 24px;
+
+            input {
+                margin-right: 16px;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .gender {
+        margin-top: 36px;
+        padding-bottom: 36px;
+
+        p {
+            margin-top: 24px;
+
+            input {
+                margin-right: 16px;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

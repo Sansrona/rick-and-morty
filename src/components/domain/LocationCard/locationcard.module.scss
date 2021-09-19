@@ -1,0 +1,39 @@
+.locationCard {
+  margin-bottom: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--card-bg-color);
+  background-color: var(--navbar-bg-color);
+  img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  a{
+    text-decoration: none;
+    
+  }
+  .info {
+    margin: 12px 15px;
+    cursor: pointer;
+    
+
+    .subtitle {
+      color: var(--subtitle-gray);
+
+      span + span {
+        padding-left: 5px;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+.episode {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin-bottom: 24px;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 16px;
+        &[where]{
+            width: 74px;
+            height: 74px;
+        }
+    }
+
+    .info {
+        p:first-of-type {
+            color: var(--tertiary-color);
+        }
+
+        p:last-of-type {
+            color: var(--subtitle-gray);
+        }
+    }
+    svg{
+        path{
+            stroke: var(--text-color)
+        }
+    }
+
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,125 @@
+@import "./styles/_variables";
+
+//document.documentElement.setAttribute('data-theme','dark')
+html {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --bg: #{$light};
+  --text-color: #{$dark};
+  --subtitle-gray: #{$gray-text-l};
+  --additional-color: #{$layout-color-light};
+  --icon-color: #{$tertiary-color};
+  --navbar-bg-color: #{$white};
+  --search-bg-color: #{$additional-gray};
+  --card-bg-color: #e0e0e0;
+  --placeholder-color: #{$layout-color-dark};
+  --icons-color:#{$white};
+}
+
+html[data-theme="dark"] {
+  --bg: #{$dark};
+  --text-color: #{$white};
+  --subtitle-gray: #{$gray-text-d};
+  --additional-color: #{$layout-color-dark};
+  --icon-color: #{$primary-color};
+  --navbar-bg-color: #{$secondary-bg-color};
+  --search-bg-color: #{$secondary-bg-color};
+  --card-bg-color: transparent;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+.h2 {
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--text-color);
+  letter-spacing: 0.25px;
+}
+
+.h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--text-color);
+}
+
+.h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: var(--text-color);
+}
+
+.h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--text-color);
+}
+
+.h6 {
+  font-size: 16px;
+  line-height: 24px;  
+  letter-spacing: 0.15px;
+  color: var(--text-color);
+}
+
+.bodyOne {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: var(--text-color);
+}
+
+.subTitle1 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.subTitle2 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.episode {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--additional-color);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p{
+    text-align: center;
+  }
+  img{
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,106 @@
+.header {
+    padding: 20px 15px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+
+    svg {
+        margin-right: 20px;
+
+        path {
+            stroke: var(--text-color);
+        }
+    }
+}
+
+.wrapper {
+    padding: 0px 23px 50px;
+
+    .profile {
+        border-bottom: 1px solid var(--search-bg-color);
+        padding-bottom: 32px;
+
+        .userInfo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 38px;
+
+            img {
+                margin-right: 16px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+        }
+
+        .button {
+            width: 100%;
+            background-color: transparent;
+            border-radius: 12px;
+            border: 1px solid var(--tertiary-color);
+            color: var(--tertiary-color);
+            padding: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .themeInfo {
+        margin-top: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid var(--search-bg-color);
+
+        &>p:first-of-type {
+            margin-bottom: 24px;
+            color: var(--subtitle-gray);
+        }
+
+        .palette {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+
+            p {
+                &:first-of-type {
+                    margin-right: 16px;
+                }
+
+                svg {
+                    path {
+                        stroke: var(--text-color);
+                    }
+                }
+            }
+
+            ;
+
+            div {
+                p+p {
+                    color: var(--subtitle-gray)
+                }
+            }
+        }
+    }
+
+    .about {
+        margin-top: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid var(--search-bg-color);
+
+        &>p:first-of-type {
+            margin-bottom: 24px;
+            color: var(--subtitle-gray);
+        }
+    }
+
+    .version {
+        margin-top: 36px;
+        padding-bottom: 50px;
+
+        &>p:first-of-type {
+            margin-bottom: 24px;
+            color: var(--subtitle-gray);
+        }
+    }
+}

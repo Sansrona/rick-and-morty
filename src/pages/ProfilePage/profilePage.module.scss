@@ -1,0 +1,66 @@
+.header {
+    padding: 20px 15px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+
+    svg {
+        margin-right: 20px;
+
+        path {
+            stroke: var(--text-color);
+        }
+    }
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+
+    label {
+        cursor: pointer;
+        font-weight: normal;
+        color: var(--tertiary-color);
+    }
+
+    input[type='file']{
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.profile {
+    padding: 0 16px;
+
+    &>p:first-of-type {
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    .userInfo {
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        div {
+            margin-bottom: 20px;
+            p+p{
+                color:var(--subtitle-gray)
+            }
+        }
+        svg{
+            path{
+                stroke: var(--text-color);
+            }
+        }
+    }
+}

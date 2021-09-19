@@ -1,0 +1,85 @@
+.characterCard {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin-bottom: 24px;
+
+
+    img {
+        border-radius: 50%;
+        width: 74px;
+        height: 74px;
+        object-fit: cover;
+        margin-right: 18px;
+    }
+
+    .characterInfo {
+        display: flex;
+        flex-direction: column;
+
+        .alive {
+            color: var(--primary-color);
+        }
+
+        .dead {
+            color: var(--secondary-color);
+        }
+
+        .unknown {
+            color: var(--tertiary-color);
+        }
+
+        .bio {
+            color: var(--subtitle-gray);
+        }
+    }
+
+    svg {
+        path {
+            stroke: var(--text-color)
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.characterCard2 {
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .characterInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+
+        .fullName{
+            text-align: center;
+        }
+
+        .alive {
+            color: var(--primary-color);
+        }
+
+        .dead {
+            color: var(--secondary-color);
+        }
+
+        .unknown {
+            color: var(--tertiary-color);
+        }
+
+        .bio {
+            color: var(--subtitle-gray);
+            text-align: center;
+        }
+    }
+}

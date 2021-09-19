@@ -1,0 +1,11 @@
+.allAndSort{
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: var(--subtitle-gray);
+    svg{
+        margin-right: 8px;
+    }
+}

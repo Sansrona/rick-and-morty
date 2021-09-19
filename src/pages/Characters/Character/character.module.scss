@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  backdrop-filter: blur(8px);
+  margin-bottom: 90px;
+
+  svg {
+    margin-left: 20px;
+    margin-top: 35px;
+
+    path {
+      stroke: var(--icons-color);
+    }
+  }
+
+  .avatar {
+    border-radius: 50%;
+    border: 8px solid var(--bg);
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translate(-50%, 20%);
+    width: 146px;
+    height: 146px;
+    object-fit: cover;
+  }
+}
+
+.wrapper {
+  padding: 0 15px;
+  border-bottom: 2px solid var(--search-bg-color);
+  margin-bottom: 36px;
+
+  svg {
+    path {
+      stroke: var(--text-color)
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+
+    span+span {
+      margin-top: 4px;
+    }
+
+    .alive {
+      color: var(--primary-color);
+    }
+
+    .dead {
+      color: var(--secondary-color);
+    }
+
+    .unknown {
+      color: var(--tertiary-color);
+    }
+  }
+
+  .bio {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+
+    div>p:first-of-type {
+      color: var(--subtitle-gray);
+      margin-bottom: 4px;
+    }
+  }
+
+  .birthPlace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    div>p:first-of-type {
+      color: var(--subtitle-gray);
+      margin-bottom: 4px;
+    }
+  }
+
+  .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+
+    div>p:first-of-type {
+      color: var(--subtitle-gray);
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.episodes {
+  .episodesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    a>span {
+      color: var(--subtitle-gray);
+
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
